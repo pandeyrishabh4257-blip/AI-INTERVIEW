@@ -1,0 +1,36 @@
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 20%, #6366f1, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+}
+.face { text-align: center; }
+.eyes span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  margin: 0 10px;
+}
+.mouth {
+  margin: 16px auto 0;
+  width: 44px;
+  height: 8px;
+  border-radius: 9999px;
+  background: white;
+  transition: all 0.2s ease;
+}
+.talking .mouth {
+  height: 26px;
+  border-radius: 12px;
+  animation: pulse 0.25s infinite alternate;
+}
+@keyframes pulse {
+  from { transform: scaleY(1); }
+  to { transform: scaleY(0.6); }
+}

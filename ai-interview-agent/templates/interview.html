@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Interview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/css/interview.css" />
+</head>
+<body class="min-h-screen bg-slate-950 text-white">
+  <div class="grid md:grid-cols-3 gap-4 p-4 md:p-8">
+    <div class="md:col-span-1 bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center">
+      <div id="avatar" class="avatar mb-6">
+        <div class="face">
+          <div class="eyes"><span></span><span></span></div>
+          <div class="mouth"></div>
+        </div>
+      </div>
+      <h2 class="text-xl font-semibold">AI HR Interviewer</h2>
+      <p class="text-slate-400 text-center">Ask, listen, evaluate.</p>
+      <button id="speakBtn" class="mt-6 bg-indigo-600 px-4 py-2 rounded-lg">🔊 Repeat Question</button>
+    </div>
+
+    <div class="md:col-span-2 bg-slate-900 border border-slate-800 rounded-2xl p-6">
+      <h1 class="text-2xl font-bold mb-4">Live Interview</h1>
+      <div id="questionBox" class="bg-slate-800 rounded-lg p-4 mb-4"></div>
+      <div id="transcript" class="h-72 overflow-y-auto bg-slate-800 rounded-lg p-4 space-y-3 mb-4"></div>
+
+      <div class="flex gap-3 mb-3">
+        <button id="startRecord" class="bg-emerald-600 px-4 py-2 rounded-lg">🎙️ Start Answer</button>
+        <button id="stopRecord" class="bg-rose-600 px-4 py-2 rounded-lg">⏹ Stop</button>
+      </div>
+      <textarea id="manualAnswer" class="w-full bg-slate-800 border border-slate-700 rounded-lg p-3" placeholder="Type answer fallback..."></textarea>
+      <button id="submitAnswer" class="mt-3 bg-indigo-600 px-5 py-2 rounded-lg">Submit Answer</button>
+    </div>
+  </div>
+  <script src="/static/js/interview.js"></script>
+</body>
+</html>
