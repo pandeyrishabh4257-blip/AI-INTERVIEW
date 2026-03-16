@@ -1,0 +1,11 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+jinja2==3.1.4
+python-multipart==0.0.9
+pymongo==4.8.0
+PyPDF2==3.0.1
+spacy==3.7.6
+sentence-transformers==3.0.1
+openai==1.47.0
+openai-whisper==20240930
+requests==2.32.3
